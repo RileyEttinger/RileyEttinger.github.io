@@ -1,0 +1,53 @@
+
+body {
+    font-family: arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(209, 202, 202);
+    margin: o;
+    padding: 0;
+    
+}
+
+#content {
+    background-color: rgb(10, 10, 10);
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(206, 195, 195);
+}
+
+#banner {
+    background-color: rgb(20, 20, 20);
+   text-align: center;
+   border: 1px solid rgb(20, 19, 19);
+   margin: 10px;
+   padding: 10px;
+}
+
+#blogposts {
+    margin: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(17, 16, 17);
+}
+
+.post {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(180, 169, 169);
+    background-color: rgb(39, 8, 70);
+}
+
+.post .left {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+.post img {
+    width: 200px;
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
