@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cool unicorn</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
 </head>
 <body>
+    <div id="content">
+        <div id="banner">
+            <h1>Get To School 5</h1>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School</a>
+            <a href="#" onclick="changeSheet()">ChangeMode</a>
+        </div>
+        <div class="post">
+            <h2 style="display: block;">Get To School</h2>
+            <img src="img/game home screen.PNG" alt="Game loading screen" class="left">
+            <p>Get To School is a smash hit indie success about getting to school.... presumably? i try to put the best into my work so always make sure to look out for new updates with new and exciting things i usally update alot.</p>
+        </div>
         <div id="blogposts">
         <div class="post">
                 <h2>About My Game</h2>
-                <p>this is a RPG about getting to school and was made by me in RPG maker MZ. Also, there is dungons,NPC's,mazes,and more!</p>
+                <p>this is a RPG about getting to school and was made by me in RPG maker MZ. Also, there is dungons,NPC's,mazes,and more! so join us in the battle ahead to get to school. and make sure to pack some gear and bring your friends for it will be a dangerous journey.</p>
             </div>       
         </div>
          
@@ -18,4 +32,27 @@
     
     </div>
 </body>
+<script>
+
+    var lightMode = true; 
+    
+    function changeSheet() {
+        // make lightMode equil NOT lightMode
+        lightMode = !lightMode
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark styleSheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+    
+    </script>
+
 </html>
