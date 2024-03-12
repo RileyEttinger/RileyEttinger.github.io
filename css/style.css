@@ -1,52 +1,66 @@
 
 body {
     font-family: arial, sans-serif;
-    background-color: rgb(0, 255, 242);
-    margin: o;
+    background-color: rgb(25, 0, 255);
+    margin: 0;
     padding: 0;
     
 }
 
 #content {
     background-color: black;
-    width: 60%;
-    margin: auto;
+    width: 100%;
     border: 1px solid rgb(0, 0, 0);
 }
 
 #banner {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(9, 255, 0);
    text-align: center;
-   border: 1px solid black;
+   border-radius: 40%;
    margin: 10px;
-   padding: 10px;
+   padding: 0px;
 }
 
 #blogposts {
-    margin: 30px;
+    margin: 0px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(155, 6, 241);
+    background-color: rgb(0, 0, 0);
 }
 
 .post {
     margin: 10px;
     padding: 10px;
-    border: 1px solid black;
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(0, 255, 85);
+    border-style: dashed;
 }
 
 .post .left {
-    display: inline;
-    margin-right: 10px;
+    display: inline-flex;
+    margin-right: 20px;
     
 }
 
 .post img {
-    width: 200px;
+    width: 400px;
 }
 
 .gallary {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
