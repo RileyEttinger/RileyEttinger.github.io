@@ -1,44 +1,42 @@
 
 body {
     font-family: arial, sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: rgb(209, 202, 202);
-    margin: o;
+    background-color: rgb(7, 7, 7);
+    margin: 0;
     padding: 0;
     
 }
 
 #content {
-    background-color: rgb(10, 10, 10);
-    width: 60%;
-    margin: auto;
-    border: 1px solid rgb(206, 195, 195);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #banner {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(12, 161, 230);
    text-align: center;
-   border: 1px solid rgb(20, 19, 19);
+   border-radius: 40%;
    margin: 10px;
-   padding: 10px;
+   padding: 0px;
 }
 
 #blogposts {
-    margin: 30px;
+    margin: 0px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(17, 16, 17);
+    background-color: rgb(0, 0, 0);
 }
 
 .post {
     margin: 10px;
     padding: 10px;
-    border: 1px solid rgb(180, 169, 169);
-    background-color: rgb(39, 8, 70);
+    background-color: rgb(19, 58, 32);
+    border-style: dashed;
 }
 
 .post .left {
-    display: inline;
-    margin-right: 10px;
+    display: inline-flex;
+    margin-right: 20px;
     
 }
 
@@ -50,4 +48,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

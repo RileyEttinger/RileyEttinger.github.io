@@ -28,8 +28,8 @@ body {
 }
 
 .post {
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 70px;
     background-color: rgb(0, 255, 85);
     border-style: dashed;
 }
@@ -41,7 +41,9 @@ body {
 }
 
 .post img {
-    width: 400px;
+    width: 200px;
+    
+    
 }
 
 .gallary {
@@ -64,3 +66,13 @@ body {
         opacity: 1;
     }
 }
+
+.post .right {
+    float: right;
+    
+}
+
+.post .Left {
+    float: left;
+}
+
